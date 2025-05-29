@@ -11,7 +11,7 @@ interface Vacancy {
 }
 
 const VacancyPage = () => {
-  const rawParams = useParams(); // тип: Record<string, string> | null
+  const rawParams = useParams(); 
   const params = rawParams; // Используем rawParams напрямую
 
   const [vacancy, setVacancy] = useState<Vacancy | null>(null);
