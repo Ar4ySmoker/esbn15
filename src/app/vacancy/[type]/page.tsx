@@ -15,7 +15,6 @@ export default function VacancyList() {
   const type = Array.isArray(params?.type) ? params.type[0] : params?.type || 'all';
 
   useEffect(() => {
-    // Если вакансии для данного типа уже загружены в контексте, не загружаем их заново
     if (!vacancies[type]) {
       const fetchData = async () => {
         try {
